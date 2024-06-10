@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="alert.js"></script>
+
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <div class="orange_bg">
+        <img src="./img/icons/graphic6.svg" alt="">
+        <h2>We're Accepting Reservations!</h2>
+        <p class="orange_p1">Fill The Form, Select From Our Suitable And Convenient Lesson Sessions</p>
+    </div>
+    <div class="HIM">
+        <form id="reservation">
+            <div>
+                <div class="main_container">
+                    <h1 class="rsvp_h1">Student Details*</h1>
+                    <div class="title">
+                        <label for="">Title*</label><br>
+                        <select name="" id="title">
+                            <option value="">Select title</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="others">Others</option>
+                        </select>
+                        <span class="error_messege" id="titleError">Field can not be empty</span>
+                    </div>
+                    <div class="grid_container">
+                        <div>
+                            <label for="">Last Name*</label><br>
+                            <input type="text" placeholder="Last name" id="lastName">
+                            <span class="error_messege" id="lastNameError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">First Name*</label><br>
+                            <input type="text" placeholder="First name" id="firstName">
+                            <span class="error_messege" id="firstNameError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Other Names*</label><br>
+                            <input type="text" placeholder="Enter Other names" id="otherNames">
+                            <span class="error_messege" id="otherNamesError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Age Range*</label><br>
+                            <select id="age">
+                                <option value="">Age range</option>
+                                <option value="minor">Minor (10-17)</option>
+                                <option value="adult">Adult (18 and Older)</option>
+                            </select>
+                            <span class="error_messege" id="ageError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Phone Number*</label><br>
+                            <input type="text" placeholder="Phone number" id="phoneNumber">
+                            <span class="error_messege" id="phoneNumberError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Email*</label><br>
+                            <input type="email" placeholder="name123@gmail.com" id="email">
+                            <span class="error_messege" id="emailError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Address*</label><br>
+                            <input type="text" placeholder="Resident address" id="address">
+                            <span class="error_messege" id="addressError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Occupation*</label><br>
+                            <select name="" id="Occupation">
+                                <option value="">Occupation</option>
+                                <option value="student">Student</option>
+                                <option value="unemployed">Unemployed</option>
+                                <option value="employed">Employed (Part time)</option>
+                                <option value="employed2">Employed (Full time)</option>
+                            </select>
+                            <span class="error_messege" id="OccupationError">Field can not be empty</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="guardian_container" id="guardian_container">
+                    <h1 class="rsvp_h1">Guardian Details*</h1>
+                    <div class="grid_container">
+                        <div class="title">
+                            <label for="">Title*</label><br>
+                            <select name="" id="title2">
+                                <option value="">Title</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Miss">Miss</option>
+                            </select>
+                            <span class="error_messege" id="title2Error">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Full Name*</label><br>
+                            <input type="text" placeholder="Full name" id="fullName">
+                            <span class="error_messege" id="fullNameError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Address*</label><br>
+                            <input type="text" placeholder="Resident address" id="address2">
+                            <span class="error_messege" id="address2Error">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Phone Number*</label><br>
+                            <input type="text" placeholder="Phone number" id="guardianNumber">
+                            <span class="error_messege" id="guardianNumberError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Email*</label>
+                            <input type="email" placeholder="name123@gmail.com" id="email2">
+                            <span class="error_messege" id="email2Error">Field can not be empty</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Lesson_container">
+                    <h1 class="rsvp_h1">Lesson Details*</h1>
+                    <div class="grid_container">
+                        <div>
+                            <label for="">Lesson Type*</label><br>
+                            <select name="" id="TypeOfLeasson">
+                                <option value="">Select lesson type</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advance">Advance Driving</option>
+                                <option value="Parallel Parking">Parallel Parking</option>
+                                <option value="Night Driving">Night Driving</option>
+                                <option style="color: grey; background-color: rgba(128, 128, 128, 0.2);" value="highway">Highway Driving</option>
+                                <option value="Driver's Education">Driver's Education</option>
+                                <option style="color: grey; background-color: rgba(128, 128, 128, 0.2);" value="Manual">Manual Transmission</option>
+                            </select>
+                            <span class="error_messege" id="TypeOfLeassonError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Lesson Duration*</label><br>
+                            <select name="" id="lessonDuration">
+                                <option value="">Select duration</option>
+                                <option value="Two(2)Months">1-2 Months (Basics)</option>
+                                <option value="Four(4)Months">1-4 Months (Professional)</option>
+                                <option value="Six(6)Months">1-6 Months (Full Stack)</option>
+                            </select>
+                            <span class="error_messege" id="lessonDurationError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Lesson Periods*</label><br>
+                            <select name="" id="lessonperiod">
+                                <option value="">Select Lesson periods </option>
+                                <option value="Weekdays">Weekdays: Mon-Fri / 9am-1pm</option>
+                                <option value="Weekends">Weekends: Sat-Sun / 10am-2pm</option>
+                            </select>
+                            <span class="error_messege" id="lessonperiodError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <label for="">Lesson Instructor*</label><br>
+                            <select name="" id="lessonInstructor">
+                                <option value="">Select instructor </option>
+                                <option value="Kevin Martin">Kevin Martin</option>
+                                <option value="Mark Jossef">Mark Jossef</option>
+                                <option value="Robert Martin">Robert Martin</option>
+                            </select>
+                            <span class="error_messege" id="lessonInstructorError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <p for="">Reservation date*</p>
+                            <input type="date" id="date">
+                            <span class="error_messege" id="dateError">Field can not be empty</span>
+                        </div>
+                        <div>
+                            <p for="">Reservation time*</p>
+                            <input type="time" id="time">
+                            <span class="error_messege" id="timeError">Field can not be empty</span>
+                        </div>
+                    </div>
+                    <div class="mb">
+                        <span class="error_messege1" id="lastError">A Field In Your Form Is Empty</span>
+                    </div>
+                    <div class="last">
+                        <div>
+                            <input class="checkbox" type="checkbox">
+                            <p>I agree to the <a href="#"><b>terms & conditions</b></a> of TECHDA</p>
+                        </div>
+                        <input class="btn" type="submit" value="Submit">
+                    </div>
+                </div>
+    
+            </div>
+        </form>
+    </div>
+    <script src="reservation.js"></script>
+</body>
+</html>

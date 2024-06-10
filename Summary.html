@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+<body>
+    <div class="steering">
+        <div>
+            <img src="./img/icons/steering-wheel (1).png" alt="">
+            <p style="font-size: 16px;"><b><span style="color: #FB7500;">TECH</span>DA</b></p>
+        </div>
+        <h2>Driving School Booking Summary</h2>
+    </div>
+
+    <div class="greyBar">
+        <div>
+            <h3>REQUESTED BY:</h3> 
+            <P>FULL NAME: <span id="fullName"></span></P>
+            <P>Address: <span id="address"></span></P>
+            <h3>Contact:</h3>
+            <p>Email: <span id="email"></span></p>
+            <p>Phone: <span id="phone"></span></p>
+        </div>
+        <div>
+            <h3>RESERVATION SUMMARY</h3>
+            <h3>RSV - 1717732600</h3>
+            <p>Reservation date: <span id="newDate"></span></p>
+            <p>Time: <span id="time"></span></p>
+            <p>Duration: <span id="duration"></span></p>
+            <p>Instructor: <span id="tutor"></span></p>
+            <p>Location: Driving school environment</p>
+        </div>
+    </div>
+
+    <h2>Lesson Details:</h2>
+    <div class="grid">
+        <div>
+            <h4>1. *Pre-Lesson Briefing:*</h4>
+            <p>- Review of previous lessons (if applicable)</p>
+            <p>- Discussion of lesson objectives</p>
+            <p>- Q&A session to address any concerns</p>
+        </div>
+        <div>
+            <h4>2. *Vehicle Familiarization:*</h4>
+            <p>- Introduction to basic vehicle controls (e.g., pedals, steering wheel, gearshift)</p>
+            <p>- Explanation of dashboard indicators and their meanings</p>
+        </div>
+        <div>
+            <h4>3. *Driving Practice:*</h4>
+            <p>- Practice in a controlled environment (e.g., parking lot or quiet streets)</p>
+            <p>- Starting, stopping, and accelerating smoothly</p>
+            <p>- Turning left and right at intersections</p>
+            <p>- Negotiating roundabouts (if available)</p>
+        </div>
+        <div>
+            <h4>4. *Advanced Maneuvers:*</h4>
+            <p>- Parking techniques (parallel parking, perpendicular parking)</p>
+            <p>- Lane changing and merging onto different types of roads</p>
+            <p>- Handling various traffic situations (e.g., yield signs, traffic lights, pedestrian crossings)</p>
+        </div>
+    </div>
+    <div class="total">
+        <h2>Total Cost:</h2>
+        <p>Lesson Fee: $250.00</p>
+        <p>Instructor Fee: $100.00</p>
+        <p>Total: $350.00</p>
+    </div>
+    
+</body>
+<script>
+    let text = JSON.parse(localStorage.getItem('student'))
+
+    let display = document.getElementById('newDate')
+    display.innerHTML = text.date
+    document.getElementById('time').innerHTML = text.time
+    document.getElementById('duration').innerHTML = text.lessonDuration
+    document.getElementById('tutor').innerHTML = text.lessonInstructor
+    document.getElementById('email').innerHTML = text.email
+    document.getElementById('phone').innerHTML = text.phoneNumber
+    document.getElementById('address').innerHTML = text.address
+    document.getElementById('fullName').innerHTML = (text.lastName + " " + text.firstName + " " + text.otherNames)
+
+
+
+
+
+</script>
+</html>
